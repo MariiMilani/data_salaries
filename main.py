@@ -51,7 +51,7 @@ df_filtered = df[
 ]
 
 #__KPIs__
-st.space('large')
+st.markdown("<br>" * 3, unsafe_allow_html=True)
 st.subheader("📈 Principais métricas (Salário anual em USD)")
 
 if not df_filtered.empty:
@@ -70,7 +70,7 @@ col3.metric("Quantidade de registros", f"{registers:,}")
 col4.metric("Cargo mais frequente", top_job)
 
 #__Distribution__
-st.space('large')
+st.markdown("<br>" * 3, unsafe_allow_html=True)
 st.subheader("👁️‍🗨️ Distribuição dos dados")
 st.markdown("Com os dados distribuídos entre as principais colunas, fica mais fácil a leitura e interpretação dos gráficos")
 
@@ -166,7 +166,7 @@ with col2_dist2:
         st.warning("Sem informações suficientes para gerar gráfico")
 
 # ___Grafics___
-st.space('large')
+st.markdown("<br>" * 3, unsafe_allow_html=True)
 st.subheader("✔️ Gráficos")
 
 col1_graf1, col1_graf2 = st.columns(2)
@@ -260,9 +260,9 @@ with col2_graf2:
 
 
 #_DataFrame_
-st.space('large')
+st.markdown("<br>" * 3, unsafe_allow_html=True)
 st.subheader("📁 Dados Detalhados")
-st.space('small')
+st.markdown("<br>", unsafe_allow_html=True)
 st.dataframe(df_filtered)
 
 
