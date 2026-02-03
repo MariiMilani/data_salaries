@@ -9,7 +9,17 @@ st.set_page_config(
 )
 
 st.title("📊 Dashboard interativo de análises de salários na área de dados")
-st.markdown("Sinta-se livre para explorar nesta base de dados de salários na área de dados")
+st.markdown("<br>" * 2, unsafe_allow_html=True)
+st.markdown("### Navegue pela base de dados salariais da área de TI e crie suas próprias análises com filtros dinâmicos")
+st.markdown(
+            """
+            <div style='margin-bottom: 20px; font-size: 1rem; color: #e2e8f0;'>
+            <b>Obs:</b> Os números estão padronizados para aparecer no estilo americano, ou seja, 
+            vírgula ao invés de ponto na casa dos milhares. Exemplo: 1,000,000 ao invés de 1.000.000
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
 df = pd.read_csv("df_final.csv")
 
