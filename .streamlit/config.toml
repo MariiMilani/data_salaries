@@ -2,7 +2,3 @@
 base="dark"
 
 textColor = "#e2e8f0"
-
-font= "'Poppins': https://fonts.google.com/share?selection.family=Poppins:ital,wght@,300;0,300;1"
-baseFontWeight = 300
-baseFontSize = 14
